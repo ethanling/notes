@@ -1,23 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Sidebar = (props) => {
 
-	const StyledSidebar = styled.aside`
+    const StyledSidebar = styled.aside`
 		background-color: #1d1d1d;
 		grid-column: 2;
 		grid-row: 2;
-		${props => props.toggle ? ('height: 0') : ('height: 100vh;')}
-		transition: all .3s ease;
-		z-indedx. 1;
+        flex: 1;
+		${props.toggle ? "transform: scale(0);" : "transform: scale(1);"}
+		transition: transform .3s ease;
+		z-index: 1;
 	`;
-
-
-const Sidebar = (props) => {
-
 	
 	return (
 		<StyledSidebar>
-			Sidebar
+			{props.toggle ? 'true' : 'false'}
 		</StyledSidebar>
 	)
 }

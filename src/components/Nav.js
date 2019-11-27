@@ -33,7 +33,7 @@ const Nav = (props) => {
 			<StyledLogo>
 				Notes
 			</StyledLogo>
-			<MenuButton text={'Toggle'} action={() => props.handleToggle()} />
+			<MenuButton text={'Toggle'} action={props.handleToggle} />
 		</StyledNav>
 	)
 }

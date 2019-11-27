@@ -25,7 +25,8 @@ const Dashboard = () => {
 	`;
 
 	const handleToggle = () => {
-		const toggled = !toggle;
+        console.log('togggle');
+        const toggled = !toggle;
 		setToggle(toggled);
 	}
 
